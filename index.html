@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Details</title>
+    <style>
+        /* Video Background */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Places the video behind the content */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better readability */
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            color: white;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .timeline, .menu {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .timeline li, .menu li {
+            margin: 10px 0;
+        }
+        .location-link {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .location-link a {
+            color: #00ffea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-background">
+        <source src="background.mp4" type="video/mp4">
+        <!-- Fallback for unsupported browsers -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Welcome to the Op Trident Night - 2024</h1>
+
+        <div class="section">
+            <h2>Event Timeline</h2>
+            <ul class="timeline">
+                <li>6:00 PM - Welcome Drinks</li>
+                <li>6:30 PM - Opening Ceremony</li>
+                <li>7:00 PM - Live Band Performance</li>
+                <li>8:00 PM - Dinner Buffet</li>
+                <li>9:30 PM - Raffle Draw</li>
+                <li>10:00 PM - Closing Remarks</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Menu Highlights</h2>
+            <ul class="menu">
+                <li>Starters: Bruschetta, Spring Rolls</li>
+                <li>Main Course: Grilled Chicken, Veg Lasagna</li>
+                <li>Desserts: Chocolate Mousse, Fruit Tart</li>
+                <li>Beverages: Mocktails, Soft Drinks</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Location of the Venue</h2>
+            <p class="location-link">
+                <a href="https://www.google.com/maps/search/?api=1&query=JPW8+WQJ,+Great+Andaman+Trunk+Rd,+Junglighat,+Sri+Vijaya+Puram,+Andaman+and+Nicobar+Islands+744103" target="_blank">
+                    📍 Click Here for Directions
+                </a>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Special Announcements</h2>
+            <p>Don't forget to scan your raffle tickets at the counter to participate in the grand prize draw!</p>
+        </div>
+
+        <footer>
+            &copy; Lt Cdr Vishal Kunte
+        </footer>
+    </div>
+</body>
+</html>
