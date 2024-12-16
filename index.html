@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function Details</title>
     <style>
-        /* Video Background */
+        /* General Styles */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: Arial, sans-serif;
             color: white;
-            overflow: hidden;
+            overflow-x: hidden;
         }
+
+        /* Video Background */
         .video-background {
             position: fixed;
             top: 0;
@@ -21,48 +23,93 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1; /* Places the video behind the content */
+            z-index: -1;
         }
+
+        /* Content Box */
         .content {
             position: relative;
-            z-index: 1;
             text-align: center;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better readability */
+            background-color: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             margin: 20px auto;
-            width: 80%;
+            width: 90%;
+            max-width: 800px;
             color: white;
         }
+
         h1 {
-            margin-top: 50px;
-            font-size: 3em;
+            font-size: 2.5em;
             text-shadow: 2px 2px 5px #000;
         }
+
         .section h2 {
             font-size: 2em;
             margin-bottom: 10px;
         }
+
         .timeline, .menu {
             text-align: left;
             margin: 0 auto;
             max-width: 600px;
+            padding: 0;
+            list-style: none;
         }
+
         .timeline li, .menu li {
             margin: 10px 0;
         }
+
         .location-link {
             font-size: 1.2em;
             margin-top: 20px;
         }
+
         .location-link a {
             color: #00ffea;
             text-decoration: none;
             font-weight: bold;
         }
+
         footer {
             margin-top: 20px;
             font-size: 0.9em;
+            text-align: center;
+        }
+
+        /* Responsive Styles for Smaller Screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .location-link {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .section h2 {
+                font-size: 1.3em;
+            }
+
+            .timeline li, .menu li {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -70,13 +117,12 @@
     <!-- Video Background -->
     <video autoplay muted loop class="video-background">
         <source src="background.mp4" type="video/mp4">
-        <!-- Fallback for unsupported browsers -->
         Your browser does not support the video tag.
     </video>
 
     <!-- Content -->
     <div class="content">
-        <h1>Welcome to the Op Trident Night - 2024</h1>
+        <h1>Welcome to the Gala Night!</h1>
 
         <div class="section">
             <h2>Event Timeline</h2>
@@ -109,13 +155,8 @@
             </p>
         </div>
 
-        <div class="section">
-            <h2>Special Announcements</h2>
-            <p>Don't forget to scan your raffle tickets at the counter to participate in the grand prize draw!</p>
-        </div>
-
         <footer>
-            &copy; Lt Cdr Vishal Kunte
+            &copy; 2024 Gala Night Committee. All rights reserved.
         </footer>
     </div>
 </body>
